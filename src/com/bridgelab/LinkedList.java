@@ -9,5 +9,8 @@ public class LinkedList {
         myLinkedList.append(myThirdNode);
         myLinkedList.insertInMiddle(myFirstNode,mySecondNode);
         myLinkedList.displayNode();
+        //To delete the first element in the sequence
+        myLinkedList.popFirstNode();
+        myLinkedList.displayNode();
     }
 }

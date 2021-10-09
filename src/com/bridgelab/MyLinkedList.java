@@ -55,6 +55,15 @@ public class MyLinkedList {
         myNode.setNext(newNode);
         newNode.setNext(tempNode);
     }
+    /**
+     *  Method to delete first node in LinkedList
+     */
+    public void popFirstNode() {
+        if(head == null)
+            System.out.println("Linked List is empty!");
+        else
+            head = head.getNext();
+    }
 
     /**
      * This method is used to display the sequence
@@ -76,4 +85,5 @@ public class MyLinkedList {
 
     }
 }
+
 
