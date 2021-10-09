@@ -9,7 +9,11 @@ public class LinkedList {
         myLinkedList.append(mySecondNode);
         myLinkedList.append(myThirdNode);
         myLinkedList.displayNode();
+        //To insert 40
         myLinkedList.insertAtPosition(40, 2);
+        myLinkedList.displayNode();
+        // Deleting 40.
+        myLinkedList.deleteAtPosition(2);
         myLinkedList.displayNode();
 
     }
