@@ -9,8 +9,8 @@ public class LinkedList {
         myLinkedList.append(mySecondNode);
         myLinkedList.append(myThirdNode);
         myLinkedList.displayNode();
-        // Getiing the position of element 30.
-        myLinkedList.searchElement();
+        myLinkedList.insertAtPosition(40, 2);
+        myLinkedList.displayNode();
 
     }
 }

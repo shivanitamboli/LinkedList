@@ -94,6 +94,18 @@ public class MyLinkedList {
 		}
 	}
 
+	/* This Method to insert a element at particular position.. */
+	public void insertAtPosition(int key, int position) {
+		MyNode newNode = new MyNode(key);
+		MyNode nodeAtPreviousIndex = (MyNode) head;
+		for (int i = 0; i < position - 1; i++) {
+			nodeAtPreviousIndex = (MyNode) nodeAtPreviousIndex.next;
+		}
+		newNode.next = nodeAtPreviousIndex.next;
+		nodeAtPreviousIndex.next = newNode;
+
+	}
+
 	/**
 	 * This method is used to display the sequence
 	 */
