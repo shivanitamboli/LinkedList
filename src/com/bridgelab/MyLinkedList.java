@@ -77,6 +77,23 @@ public class MyLinkedList {
 		tail = tempNode;
 	}
 
+	/* Method to get the position of a element. */
+	public void searchElement() {
+		if (head == null)
+			System.out.println("Linked List is empty");
+		else {
+			INode tempNode = head;
+			int position = 0;
+			while (tempNode != null) {
+				position++;
+				if (tempNode.getKey().equals(30)) {
+					System.out.println("Key value 30 is present at position " + position + " in list");
+				}
+				tempNode = tempNode.getNext();
+			}
+		}
+	}
+
 	/**
 	 * This method is used to display the sequence
 	 */

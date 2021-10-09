@@ -1,5 +1,4 @@
 package com.bridgelab;
-
 public class LinkedList {
     public static void main(String[] args) {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
@@ -7,11 +6,11 @@ public class LinkedList {
         MyNode<Integer> myThirdNode = new MyNode<>(70);
         MyLinkedList myLinkedList = new MyLinkedList();
         myLinkedList.append(myFirstNode);
+        myLinkedList.append(mySecondNode);
         myLinkedList.append(myThirdNode);
-        myLinkedList.insertInMiddle(myFirstNode,mySecondNode);
         myLinkedList.displayNode();
-        //To delete the last element in the sequence
-        myLinkedList.popLastNode();
-        myLinkedList.displayNode();
+        // Getiing the position of element 30.
+        myLinkedList.searchElement();
+
     }
 }
